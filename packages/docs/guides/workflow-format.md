@@ -8,7 +8,7 @@ Cogni workflows use Crystal DSL files with extension `.acd.cr`.
 
 ```crystal
 workflow "agents-example" do
-  agent "simple-agent", model: "clipproxyapi/qwen3-coder-plus"
+  agent "simple-agent", model: "cliproxyapi/qwen3-coder-plus"
 end
 ```
 

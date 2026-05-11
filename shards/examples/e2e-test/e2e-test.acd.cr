@@ -1,7 +1,7 @@
 # E2E Test Example Workflow
 #
 # This workflow demonstrates comprehensive E2E testing scenarios.
-# It uses the clipproxyapi/qwen3-coder-model (configurable via COGNI_E2E_MODEL).
+# It uses the cliproxyapi/qwen3-coder-model (configurable via COGNI_E2E_MODEL).
 #
 # Features demonstrated:
 # - Model API configuration
@@ -15,7 +15,7 @@
 
 workflow "e2e-test" do
   # Use model from environment or default to qwen3-coder-model
-  @[Resources(model: "clipproxyapi/qwen3-coder-model")]
+  @[Resources(model: "cliproxyapi/qwen3-coder-model")]
 
   # Main processing agent with input/output schema validation
   agent "e2e-processor",

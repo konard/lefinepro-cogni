@@ -4,6 +4,16 @@ require "../src/cogni"
 require "./support/http_app_test_helpers"
 require "./support/agent_functions_test_helpers"
 
+COGNICORE_MOCK_LLM_ORIGINAL = ENV["COGNICORE_MOCK_LLM"]?
+
+Spec.after_each do
+  if original = COGNICORE_MOCK_LLM_ORIGINAL
+    ENV["COGNICORE_MOCK_LLM"] = original
+  else
+    ENV.delete("COGNICORE_MOCK_LLM")
+  end
+end
+
 module SpecHelpers
   def self.json_any(value)
     JSON.parse(value.to_json)

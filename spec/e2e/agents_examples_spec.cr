@@ -10,11 +10,11 @@ describe "E2E: Agents and Skills" do
   describe "agents-example" do
     it "creates workflow with model configuration and agent" do
       # Simulates: workflow "agents-example" do
-      #   agent "simple-agent", model: "clipproxyapi/qwen3-coder-plus"
+      #   agent "simple-agent", model: "cliproxyapi/qwen3-coder-plus"
       # end
       workflow = Cogni::Workflow.create_workflow("agents-example", "Agent example test")
       workflow
-        .agent("simple-agent", model: "clipproxyapi/qwen3-coder-plus")
+        .agent("simple-agent", model: "cliproxyapi/qwen3-coder-plus")
         .commit
 
       workflow.id.should eq("agents-example")

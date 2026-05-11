@@ -4,7 +4,7 @@ This workflow bundle demonstrates comprehensive end-to-end testing scenarios for
 
 ## Features Demonstrated
 
-- **Model API Configuration**: Uses `clipproxyapi/qwen3-coder-model` (configurable via environment)
+- **Model API Configuration**: Uses `cliproxyapi/qwen3-coder-model` (configurable via environment)
 - **Agent Execution**: Full agent with input/output schema validation
 - **Guardrails**: Input blocking and output length validation
 - **Approval Nodes**: Human-in-the-loop checkpoint
@@ -17,7 +17,7 @@ This workflow bundle demonstrates comprehensive end-to-end testing scenarios for
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `COGNI_E2E_MODEL` | Model to use for E2E tests | `clipproxyapi/qwen3-coder-model` |
+| `COGNI_E2E_MODEL` | Model to use for E2E tests | `cliproxyapi/qwen3-coder-model` |
 | `CLIPROXY_API_KEY` | API key for clipproxy service | (required for real API) |
 | `COGNICORE_MOCK_LLM` | Set to `1` to use mock responses | - |
 

@@ -71,7 +71,7 @@ jobs:
           fi
         env:
           CLIPROXY_API_KEY: ${{ secrets.CLIPROXY_API_KEY }}
-          COGNI_E2E_MODEL: "clipproxyapi/qwen3-coder-model"
+          COGNI_E2E_MODEL: "cliproxyapi/qwen3-coder-model"
 
   build:
     runs-on: ubuntu-latest

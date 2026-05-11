@@ -1,6 +1,6 @@
 ---
 description: "E2E test processing agent with full schema and guardrails support"
-model: "clipproxyapi/qwen3-coder-model"
+model: "cliproxyapi/qwen3-coder-model"
 guardrails:
   input:
     blocked_terms: ["forbidden", "blocked"]

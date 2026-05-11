@@ -131,7 +131,7 @@ describe "E2E: Workflow Lifecycle" do
       workflow = Cogni::Workflow.create_workflow("e2e-test", "E2E test workflow")
       workflow
         .agent("e2e-processor",
-          model: "clipproxyapi/qwen3-coder-model",
+          model: "cliproxyapi/qwen3-coder-model",
           input_schema: Cogni::Workflows::DSL::Types.object({"task" => Cogni::Workflows::DSL::Types.of(String)}, strict: false),
           output_schema: Cogni::Workflows::DSL::Types.object({"result" => Cogni::Workflows::DSL::Types.of(String)}, strict: false))
         .suspend("e2e-approval", reason: "Review E2E test output")

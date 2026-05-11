@@ -4,7 +4,7 @@ require "file_utils"
 # Shared helpers for E2E test suite
 #
 # Configuration:
-# - Model API: Configurable via COGNI_E2E_MODEL env var (default: clipproxyapi/qwen3-coder-model)
+# - Model API: Configurable via COGNI_E2E_MODEL env var (default: cliproxyapi/qwen3-coder-model)
 # - API keys: Stored in CLIPROXY_API_KEY secret
 # - Mock mode: Set COGNICORE_MOCK_LLM=1 for unit testing without real API calls
 #
@@ -20,7 +20,7 @@ module E2ETestHelpers
 
   # Default model for E2E tests - configurable via environment
   def default_model : String
-    ENV["COGNI_E2E_MODEL"]? || "clipproxyapi/qwen3-coder-model"
+    ENV["COGNI_E2E_MODEL"]? || "cliproxyapi/qwen3-coder-model"
   end
 
   # Check if we're in mock mode
